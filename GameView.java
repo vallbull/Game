@@ -35,6 +35,7 @@ public class GameView extends View {
         super.onDraw(canvas);
         for (Character character : objects) {
             character.draw(canvas);
+            character.update();
         }
         invalidate();
     }
